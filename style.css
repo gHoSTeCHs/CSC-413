@@ -126,6 +126,32 @@ input {
 	margin-bottom: 20px;
 }
 
+/*Footer*/
+.footer {
+	margin-top: 50px;
+	background-color: #32c2c2;
+}
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footerImg {
+	width: 75px;
+}
+
+.footerLinks ul {
+	flex-direction: column;
+	gap: 2px;
+}
+
+.footerLinks ul li a {
+	font-size: 15px;
+	color: black;
+}
+
 @media screen and (max-width: 500px) {
 	.navBar .container,
 	.intro .container {
