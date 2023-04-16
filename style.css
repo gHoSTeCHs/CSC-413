@@ -171,6 +171,12 @@ input {
 	li {
 		display: none;
 	}
+	.footerLinks ul li {
+		display: block;
+	}
+	.aboutUs {
+		padding-bottom: 20px;
+	}
 	button {
 		margin-bottom: 20px;
 	}
