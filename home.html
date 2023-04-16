@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Flo-cycle Tracker</title>
+	</head>
+	<body>
+		<nav class="navBar">
+			<div class="container">
+				<div class="content">
+					<div class="logo">
+						<img src="./Images/ASSIGNMENT LOGO.png" alt="" class="webLogo" />
+					</div>
+					<div class="links">
+						<ul>
+							<li><a href="./home.html">HOME</a></li>
+							<li><a href="./about.html">ABOUT</a></li>
+							<li><a href="./contant.html">CONTACT</a></li>
+							<li><a href="./more.html">LEARN MORE</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="intro">
+			<div class="container">
+				<div class="welcome">
+					<h1>WELCOME <span class="name"></span></h1>
+				</div>
+				<div class="aboutUs">
+					<h3>
+						Do you find it challenging to figure out the starting time of your
+						menstrual cycle? Well look no further because here at
+						<span class="flow">Flow-Cycle</span>, We've taken care of everything
+						for you.
+					</h3>
+				</div>
+			</div>
+		</section>
+		<div class="formSection">
+			<div class="container">
+				<form action="" class="form" id="form">
+					<div class="formContent">
+						<div>
+							<label for="dates">When was your last cycle?</label>
+							<input type="datetime-local" name="dates" id="date" />
+						</div>
+						<div>
+							<label for="cycleDay">How long is your cycle?</label>
+							<input type="number" name="cycleDay" id="cycleDays" />
+						</div>
+						<div>
+							<label for="perio">How many days does it last?</label>
+							<input type="number" name="perio" id="period" />
+						</div>
+					</div>
+					<button type="submit" id="button">Calculate</button>
+				</form>
+			</div>
+		</div>
+		<secton class="results">
+			<div class="container">
+				<div class="startDate">
+					<h3>Your next cycle should start on:</h3>
+					<h4 class="start"></h4>
+				</div>
+				<div class="ovula">
+					<h3>Your fertile window:</h3>
+					<h4 class="fertile"></h4>
+				</div>
+			</div>
+		</secton>
+		<footer class="footer">
+			<div class="container"></div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
