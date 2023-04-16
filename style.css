@@ -71,6 +71,20 @@ label {
 	text-transform: uppercase;
 }
 
+/*About page*/
+.about {
+	margin: 20px 0;
+	margin-bottom: 100px;
+}
+p {
+	font-size: 20px;
+}
+
+h5 a {
+	font-size: 15px;
+	color: black;
+}
+
 /*Form section*/
 /* label {
 	text-transform: uppercase;

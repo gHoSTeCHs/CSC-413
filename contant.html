@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* Style inputs with type="text", select elements and textareas */
+			body {
+				background: linear-gradient(to left, rgb(206, 52, 103), #ff0066);
+			}
+			/*Nav-Bar*/
+			.content {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.webLogo {
+				width: 100px;
+			}
+
+			ul {
+				display: flex;
+				gap: 10px;
+			}
+
+			li {
+				list-style: none;
+				font-weight: bold;
+			}
+
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 20px;
+			}
+
+			.links ul li:hover {
+				border-bottom: 5px solid #32c2c2;
+				border-radius: 5px;
+				padding-bottom: 5px;
+			}
+			input[type='text'],
+			select,
+			textarea {
+				width: 100%; /* Full width */
+				padding: 12px; /* Some padding */
+				border: 1px solid #ccc; /* Gray border */
+				border-radius: 4px; /* Rounded borders */
+				box-sizing: border-box; /* Make sure that padding and width stays in place */
+				margin-top: 6px; /* Add a top margin */
+				margin-bottom: 16px; /* Bottom margin */
+				resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+			}
+
+			/* Style the submit button with a specific background color etc */
+			input[type='submit'] {
+				background-color: #04aa6d;
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			/* When moving the mouse over the submit button, add a darker green color */
+			input[type='submit']:hover {
+				background-color: #45a049;
+			}
+
+			/* Add a background color and some padding around the form */
+			.container {
+				border-radius: 5px;
+				/* background: linear-gradient(to left, rgb(206, 52, 103), #ff0066); */
+				padding: 20px;
+			}
+			/*Footer*/
+			footer {
+				margin-top: 50px;
+				background-color: #32c2c2;
+			}
+
+			.foot {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.footerImg {
+				width: 75px;
+			}
+
+			.footerLinks ul {
+				flex-direction: column;
+				gap: 2px;
+			}
+
+			.footerLinks ul li a {
+				font-size: 15px;
+				color: black;
+			}
+
+			@media screen and (max-width: 500px) {
+				.navBar .container,
+				.intro .container {
+					padding: 0 20px;
+				}
+				.navBar {
+					padding-top: 20px;
+				}
+				.content,
+				.welcome {
+					display: flex;
+					justify-content: center;
+				}
+				.welcome {
+					padding-bottom: 30px;
+				}
+				li {
+					display: none;
+				}
+				.footerLinks ul li {
+					display: block;
+				}
+				.aboutUs {
+					padding-bottom: 20px;
+				}
+				button {
+					margin-bottom: 20px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navBar">
+			<div class="container">
+				<div class="content">
+					<div class="logo">
+						<img src="./Images/ASSIGNMENT LOGO.png" alt="" class="webLogo" />
+					</div>
+					<div class="links">
+						<ul>
+							<li><a href="./home.html">HOME</a></li>
+							<li><a href="./about.html">ABOUT</a></li>
+							<li><a href="./contant.html">CONTACT</a></li>
+							<li><a href="./more.html">LEARN MORE</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="formSection">
+			<div class="container">
+				<form>
+					<label for="fname">First Name</label>
+					<input
+						type="text"
+						id="fname"
+						name="firstname"
+						placeholder="Your name.." />
+
+					<label for="lname">Last Name</label>
+					<input
+						type="text"
+						id="lname"
+						name="lastname"
+						placeholder="Your last name.." />
+
+					<label for="country">Tribe</label>
+					<select id="country" name="country">
+						<option value="australia">Igb0</option>
+						<option value="canada">Hausa</option>
+						<option value="usa">Yoruba</option>
+					</select>
+
+					<label for="subject">Subject</label>
+					<textarea
+						id="subject"
+						name="subject"
+						placeholder="Write something.."
+						style="height: 200px"></textarea>
+
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="foot">
+					<img src="./Images/ASSIGNMENT LOGO.png" alt="" class="footerImg" />
+					<div class="footerLinks">
+						<ul>
+							<li><a href="./home.html">HOME</a></li>
+							<li><a href="./about.html">ABOUT</a></li>
+							<li><a href="./contant.html">CONTACT</a></li>
+							<li><a href="./more.html">LEARN MORE</a></li>
+						</ul>
+					</div>
+					<div class="top">
+						<h5><a href="#">Back to top</a></h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
