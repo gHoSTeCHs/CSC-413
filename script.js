@@ -52,7 +52,7 @@ form.addEventListener('submit', (e) => {
 	const perStFull = `${day1}-${month1}-${day2}-${year1}`;
 
 	//Period End Date
-	const lastPeriod = starts.setDate(starts.getDate() + parseInt(periodVal));
+	const lastPeriod = starts.setDate(starts.getDate() + parseInt(periodVal) - 1);
 	const ends = new Date(lastPeriod);
 	const day3 = arr1[ends.getDay()];
 	const month2 = arr2[ends.getMonth()];
